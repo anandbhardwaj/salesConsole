@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <customSettingsVisibility>Public</customSettingsVisibility>
+    <description>Custom setting that is used for configuring the Sales Console Sidebar. Each custom setting instance should define an Object and the name of a fieldset that defines the column headings.</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>DIsplay_Order__c</fullName>
+        <description>Which order should the objects be displayed in? 1 being the highest (i.e. top of the sidebar).</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which order should the objects be displayed in? 1 being the highest (i.e. top of the sidebar).</inlineHelpText>
+        <label>DIsplay Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Field_Set_Name__c</fullName>
+        <description>Which fieldset is going to be used to determine columns displayed</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which fieldset is going to be used to determine columns displayed</inlineHelpText>
+        <label>Field Set Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Object_Name__c</fullName>
+        <description>Define the API name of the object.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the API name of the object that you would want to display in the sidebar.</inlineHelpText>
+        <label>Object Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Object_Field_Name__c</fullName>
+        <description>This should be the api name of the field that points at the Account. This version of the Sidebar Console has been designed and tested for Account parents only (it might work with others though!)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>What is the API name of the parent object (i.e. the object that will be displayed at the top level of the console)</inlineHelpText>
+        <label>Parent Object Field Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Sales Console Sidebar</label>
+</CustomObject>
